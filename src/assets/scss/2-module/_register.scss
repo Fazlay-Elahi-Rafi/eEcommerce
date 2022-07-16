@@ -1,0 +1,286 @@
+.register {
+  margin: 0 0;
+  overflow: hidden;
+  &__card {
+    border: 0 !important;
+    &-layer {
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 30px;
+      width: 515px;
+    }
+    &-img {
+      height: 750px !important;
+      max-height: 750px;
+      border-radius: 0;
+
+      // min-width: 992px;
+      @include lg-screen {
+        border-radius: 0 100px 100px 0;
+      }
+    }
+    &-logo {
+      padding: 5rem 0 2rem 0;
+
+      // min-width: 992px;
+      @include lg-screen {
+        padding: 3rem 0 11rem 0;
+      }
+      &--img {
+        width: 10rem;
+      }
+    }
+    &-body {
+      &--middle {
+        padding: 0 0 3rem 0;
+
+        // min-width: 992px;
+        @include lg-screen {
+          padding: 0 0 5rem 0;
+        }
+      }
+      &--bottom {
+        padding: 0 0 5rem 0;
+
+        // min-width: 992px;
+        @include lg-screen {
+          padding: 0 0 4rem 0;
+        }
+      }
+      &--link {
+        text-decoration: none;
+        font-family: $font3;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: $white !important;
+        font-size: 1rem !important;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      &--span {
+        color: $white;
+        font-size: 1rem;
+        font-family: $font3;
+        font-weight: 400;
+        display: block;
+      }
+
+      &--textSmall {
+        color: $white;
+        font-size: 1.4rem;
+        font-weight: 300;
+        text-transform: capitalize;
+        display: block;
+
+        // min-width: 400px;
+        @include xsss-screen {
+          font-size: 1.5rem;
+        }
+      }
+      &--text {
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: $white;
+        display: block;
+        margin: 5px 0 12px 0;
+
+        // min-width: 400px;
+        @include xsss-screen {
+          font-size: 1.7rem;
+        }
+      }
+      &--para {
+        font-size: 1rem;
+        font-weight: 300;
+        color: $white;
+      }
+    }
+  }
+
+  &__title {
+    font-family: $font3;
+    text-transform: capitalize;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: $C-1;
+    margin: 0 0 1.5rem 0;
+  }
+  &__sub {
+    text-transform: capitalize;
+    color: $C-1;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+  }
+  &__inp {
+    font-family: $font3;
+    box-shadow: none !important;
+    outline: 0 !important;
+    border: 1px solid #e7e7e7 !important;
+    border-radius: 2px !important;
+    padding: 8px 16px !important;
+    color: $C-1 !important;
+
+    &-div {
+      display: flex;
+      position: relative;
+    }
+    &-icon {
+      position: absolute;
+      top: 5px;
+      right: 16px;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+  }
+  &__forgot {
+    margin: 1rem 0;
+    &-text {
+      font-family: $font3;
+      color: #268e6b !important;
+      text-decoration: none !important;
+      font-weight: 500 !important;
+      &:hover {
+        text-decoration: underline !important;
+      }
+    }
+  }
+  &__button {
+    &-btn {
+      background: #258e6bd4 !important;
+      color: $white !important;
+      padding: 10px 0 !important;
+      box-shadow: none !important;
+      outline: 0 !important;
+      text-transform: capitalize;
+      font-family: $font3;
+      font-weight: 500 !important;
+      font-size: 1.05rem !important;
+      border-radius: 5px !important;
+
+      &:hover {
+        background: #268e6b !important;
+      }
+    }
+  }
+  &__or {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: $font3;
+    color: #646464;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -11px;
+      right: 0;
+      width: 46%;
+      height: 100%;
+      border-bottom: 1px solid #646464;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: -11px;
+      left: 0;
+      width: 46%;
+      height: 100%;
+      border-bottom: 1px solid #646464;
+    }
+  }
+  &__social {
+    margin: 0 0;
+    &-ul {
+      margin: 0 0;
+      padding: 0 0;
+      display: block;
+      justify-content: space-between;
+      align-items: center;
+
+      // min-width: 576px;
+      @include sm-screen {
+        display: flex;
+      }
+      li {
+        list-style: none;
+      }
+      &--icon {
+        font-size: 1.2rem;
+      }
+      &--link {
+        box-shadow: none !important;
+        outline: 0 !important;
+        border: none !important;
+        text-decoration: none;
+        color: $white !important;
+        border-radius: 5px !important;
+        font-family: $font3;
+        font-weight: 400 !important;
+        font-size: 1rem !important;
+        text-transform: capitalize;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 1rem !important;
+      }
+
+      &--active {
+        // padding: 14px 8.2rem !important;
+        border-radius: 5px !important;
+
+        // min-width: 576px;
+        @include sm-screen {
+          padding: 14px 8rem !important;
+        }
+
+        // min-width: 768px;
+        @include md-screen {
+          padding: 14px 7rem !important;
+        }
+
+        // min-width: 992px;
+        @include lg-screen {
+          padding: 14px 5rem !important;
+        }
+
+        // min-width: 1200px;
+        @include xl-screen {
+          padding: 14px 8.2rem !important;
+        }
+
+        // min-width: 1400px;
+        @include xlii-screen {
+          padding: 14px 7rem !important;
+        }
+
+        // min-width: 1440px;
+        @include xliii-screen {
+          padding: 14px 8rem !important;
+        }
+      }
+      &--g {
+        background: $ins !important;
+        &:hover {
+          background: #e95a41 !important;
+        }
+      }
+      &--a {
+        background: #132133e6 !important;
+        &:hover {
+          background: #132133 !important;
+        }
+      }
+      &--f {
+        background: $fb !important;
+        &:hover {
+          background: #2f497e !important;
+        }
+      }
+    }
+  }
+}
