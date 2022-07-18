@@ -1,18 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-import { BsGoogle, BsApple } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
-
-import img from "../../img/auth.jpg";
-import logo from "../../img/logo.png";
+import img from "../img/auth.jpg";
+import logo from "../img/logo.png";
+import Social from "./social";
 
 export default function Register() {
-  const navigate = useNavigate();
-  const [google, setGoogle] = useState(true);
-  const [apple, setApple] = useState(false);
-  const [fb, setFb] = useState(false);
-
   const [state, setState] = useState({
     name: "",
     email: "",
@@ -152,79 +145,7 @@ export default function Register() {
                 </div>
               </form>
 
-              <span className="register__or">or</span>
-              <div className="register__social">
-                <ul className="register__social-ul">
-                  <li>
-                    <a
-                      href="#"
-                      className={`register__social-ul--link register__social-ul--g form-control ${
-                        google ? "register__social-ul--active" : ""
-                      }`}
-                      onMouseOver={(e) => setGoogle(true)}
-                    >
-                      <BsGoogle
-                        className={`register__social-ul--icon ${
-                          google ? "mx-2" : ""
-                        }`}
-                      />
-                      <span className="d-none d-sm-block">
-                        {google ? "google" : ""}
-                      </span>
-                    </a>
-                  </li>
-                  <li className="my-3 my-sm-0">
-                    <a
-                      href="#"
-                      className={`register__social-ul--link register__social-ul--a form-control ${
-                        apple ? "register__social-ul--active" : ""
-                      }`}
-                      onMouseOver={(e) => {
-                        setApple(true);
-                        setGoogle(false);
-                      }}
-                      onMouseOut={(e) => {
-                        setApple(false);
-                        setGoogle(true);
-                      }}
-                    >
-                      <BsApple
-                        className={`register__social-ul--icon ${
-                          apple ? "mx-2" : ""
-                        }`}
-                      />
-                      <span className="d-none d-sm-block">
-                        {apple ? "apple" : ""}
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className={`register__social-ul--link register__social-ul--f form-control ${
-                        fb ? "register__social-ul--active" : ""
-                      }`}
-                      onMouseOver={(e) => {
-                        setGoogle(false);
-                        setFb(true);
-                      }}
-                      onMouseOut={(e) => {
-                        setFb(false);
-                        setGoogle(true);
-                      }}
-                    >
-                      <FaFacebookF
-                        className={`register__social-ul--icon ${
-                          fb ? "mx-2" : ""
-                        }`}
-                      />
-                      <span className="d-none d-sm-block">
-                        {fb ? "facebook" : ""}
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <Social />
             </div>
           </div>
         </div>

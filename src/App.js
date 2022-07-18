@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import webFont from "webfontloader";
 
 // Login & Register
-import Register from "./assets/components/00-auth/register";
-import Login from "./assets/components/00-auth/login";
+import Register from "./assets/components/register";
+import Login from "./assets/components/login";
 
 export default function App() {
   useEffect(() => {
