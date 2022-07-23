@@ -6,6 +6,7 @@ import webFont from "webfontloader";
 // Login & Register
 import Register from "./assets/components/register";
 import Login from "./assets/components/login";
+import List from "./assets/components/Order_list/list";
 
 export default function App() {
   useEffect(() => {
@@ -19,8 +20,9 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Register />} />
-        <Route path="/login" element={<Login />} />
+        {/* <Route path="/" element={<Register />} /> */}
+        {/* <Route path="/login" element={<Login />} /> */}
+        <Route path="/" element={<List />} />
       </Routes>
     </Router>
   );

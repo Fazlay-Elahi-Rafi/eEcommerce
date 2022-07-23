@@ -1,3 +1,9 @@
+@mixin ms-screen {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
 //Extra Medium-Small Screen
 @mixin xsss-screen {
   @media screen and (min-width: 400px) {

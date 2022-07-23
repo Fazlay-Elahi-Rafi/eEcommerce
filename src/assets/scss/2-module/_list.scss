@@ -1,0 +1,74 @@
+.list {
+    margin: 0 0;
+
+    &__title {
+        font-family: $font;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    &__text {
+        font-family: $font;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    &__head {
+        border-bottom: 1px solid black;
+    }
+
+    &__col {
+        overflow-x: hidden;
+
+        // max-width: 500px;
+        @include ms-screen {
+            overflow-x: scroll;
+        }
+    }
+
+    &__table {
+        width: 100%;
+
+        // max-width: 500px;
+        @include ms-screen {
+            width: 32rem !important;
+        }
+
+        ;
+    }
+
+    &__btn {
+        font-family: $font;
+        text-transform: uppercase;
+        border: 2px solid #eee !important;
+        border-color: #e1e1e1 !important;
+        color: #333 !important;
+        padding: 8px 2rem !important;
+        border-radius: 3px !important;
+        font-size: 0.8rem !important;
+        font-weight: 600 !important;
+
+        &:hover {
+            color: #333 !important;
+            border-color: #e1e1e1 !important;
+            background-color: #e1e1e1 !important;
+        }
+    }
+
+    &__pending {
+        font-family: $font;
+        font-size: 1.05rem;
+        margin: 0 0;
+        text-transform: capitalize;
+        border-bottom: 1px solid black;
+    }
+
+    &__cancel {
+        font-family: $font;
+        font-size: 1.05rem;
+        color: $ins;
+        text-transform: capitalize;
+        border-bottom: 1px solid black;
+    }
+
+}
