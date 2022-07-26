@@ -1,0 +1,47 @@
+.address {
+    margin: 0 0;
+
+    &__form {
+        margin: 0 0;
+
+        &-label {
+            font-size: 1rem;
+            text-transform: capitalize;
+            font-family: $font3;
+            font-weight: 500;
+            margin: 0 0 7px 0;
+        }
+
+        &-inp {
+            font-size: 1rem;
+            text-transform: capitalize;
+            font-family: $font;
+            box-shadow: none !important;
+            border: 1px solid #67646457 !important;
+            border-radius: 2px !important;
+        }
+
+        &-btn {
+            box-shadow: none !important;
+            outline: 0 !important;
+            text-transform: uppercase;
+            font-family: $font3;
+            font-size: 1rem !important;
+            background: $C-1  !important;
+            color: white !important;
+            border-radius: 2px !important;
+            padding: 8px 2rem !important;
+            letter-spacing: 1px;
+            margin: 1.5rem 0 2rem 0;
+            border: 1px solid transparent !important;
+            transition: all 0.2s ease-in !important;
+
+            &:hover {
+                background: transparent !important;
+                color: $C-1  !important;
+                border: 1px solid $C-1  !important;
+                transition: all 0.2s ease-in !important;
+            }
+        }
+    }
+}

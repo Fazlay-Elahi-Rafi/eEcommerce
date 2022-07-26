@@ -3,8 +3,24 @@
 
     &__title {
         font-family: $font;
-        font-weight: bold;
-        text-transform: capitalize;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+
+        &-icon {
+            color: #706d6dbf;
+            margin: 0 0.5rem 0 0;
+        }
+
+        &-border {
+            width: 6rem;
+            margin: 0 0 0 0;
+            background: #ff933bd9;
+            height: 2px !important;
+            opacity: 1;
+            border-radius: 54px;
+        }
     }
 
     &__text {
@@ -18,23 +34,21 @@
     }
 
     &__col {
-        overflow-x: hidden;
+        overflow-x: scroll;
 
-        // max-width: 500px;
-        @include ms-screen {
-            overflow-x: scroll;
+        // min-width: 992px;
+        @include lg-screen {
+            overflow-x: hidden;
         }
     }
 
     &__table {
-        width: 100%;
+        width: 32rem !important;
 
-        // max-width: 500px;
-        @include ms-screen {
-            width: 32rem !important;
+        // min-width: 992px;
+        @include lg-screen {
+            width: 100% !important;
         }
-
-        ;
     }
 
     &__btn {
@@ -68,7 +82,16 @@
         font-size: 1.05rem;
         color: $ins;
         text-transform: capitalize;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #00000026;
+    }
+
+    tr {
+        border-bottom: 1px solid #00000026;
+    }
+
+    td {
+        border: 0;
+        padding: 12px 0;
     }
 
 }

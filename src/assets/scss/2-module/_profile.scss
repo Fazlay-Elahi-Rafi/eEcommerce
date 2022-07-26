@@ -1,0 +1,116 @@
+.profile {
+    padding: 2.5rem 0;
+    background: #e6e6e69c;
+
+    &__title {
+        font-family: $font3;
+        color: $C-1;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: capitalize;
+
+        // min-width: 576px;
+        @include sm-screen {
+            font-size: 2.5rem;
+        }
+
+    }
+
+    &__list {
+        margin: 0 0;
+        padding: 0 0;
+        display: flex;
+        justify-content: center;
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            font-family: $font3;
+            font-weight: 500;
+            text-decoration: none;
+            color: $C-1  !important;
+            text-transform: capitalize;
+            font-size: 1rem;
+        }
+
+        &-icon {
+            cursor: default;
+        }
+    }
+
+    &__info {
+        margin: 5rem 0 0 0;
+
+        &-list {
+            margin: 0 0;
+            padding: 0 0;
+
+            li {
+                list-style: none;
+                border-bottom: 1px solid #00000026;
+            }
+
+            &--a {
+                display: flex;
+                font-family: $font;
+                font-weight: 600;
+                text-decoration: none;
+                color: $C-1  !important;
+                text-transform: capitalize;
+                font-size: 1.1rem;
+                padding: 0.8rem 0 0.8rem 13px;
+                transition: all 0.2s ease-in;
+                // border-left: 2px solid transparent;
+
+                &:hover {
+                    transition: all 0.2s ease-in;
+                    color: #ff933bd9 !important;
+                    border-left: 2px solid #ff933bd9;
+                }
+            }
+
+            &--active {
+                display: flex;
+                font-family: $font;
+                font-weight: 600;
+                text-decoration: none;
+                text-transform: capitalize;
+                font-size: 1.1rem;
+                padding: 0.8rem 0 0.8rem 13px;
+                color: #ff933bd9 !important;
+                border-left: 2px solid #ff933bd9;
+            }
+        }
+
+        &-box {
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+            padding: 3rem 0;
+            border-radius: 3px;
+
+            &:hover &--text {
+                color: #ff933bd9 !important;
+            }
+
+            &:hover &--icon {
+                color: #ff933bd9 !important;
+            }
+
+            &--icon {
+                font-size: 2.5rem;
+                color: $C-1;
+            }
+
+            &--text {
+                font-family: $font;
+                font-weight: 600;
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                margin: 1rem 0 0 0;
+                letter-spacing: 2px;
+                color: $C-1  !important;
+            }
+        }
+    }
+}
